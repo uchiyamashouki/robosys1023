@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 import sys
+<<<<<<< HEAD
 
 
 def tonum(s):
@@ -14,4 +15,15 @@ for line in sys.stdin:
     line = line.rstrip()
     ans += tonum(line)
 
+=======
+　　 
+ans = 0　
+for line in sys.stdin:
+    line = line.rstrip()
+    try: 
+        ans += int(line)  
+    except:　
+        ans += float(line)
+           　 
+>>>>>>> 954ece8 (support integer calculation)
 print(ans)
